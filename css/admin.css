@@ -1,0 +1,163 @@
+:root {
+    /* Define las variables de color */
+    --sombraycontorno:#E7BCA2;
+    --sombrasycontornos:#cea896;
+    --encabezado: #a17363;
+    --letras:#FFFFFF;
+    --letra: #000000;
+  }
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+h1 {
+    color: var(--letra); /* Utilizando la variable de color */
+    padding: 2%;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 50%;
+    color: var(--letra);
+    background-color: var(--sombrasycontornos);
+    
+}
+
+header img {
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+  }
+  
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-color: var(--letras);
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: var(--sombraycontorno);
+    color: var(--letras);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 40px;
+}                                                                                       
+
+/* Estilos del pie de página */
+footer {
+    background-color: var(--sombraycontorno);
+    color: var(--letra);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para los enlaces de mesas, meseros y platillos */
+.info-mesa a {
+    display: grid;
+    padding: 10px 20px;
+    margin: 40px;
+    margin-top: 0%;
+    background-color: var(--sombrasycontornos);
+    color: var(--letra);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-size: 24px;
+}
+
+a:hover {
+    transform: scale(1.1);
+    background-color: var(--letra);
+    color:var(--letras);
+}
+
+.info-mesa {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.info-mesa:last-child {
+    margin-right: 0;
+}
+
+
+
+#info {
+    background-color: rgba(201, 157, 106, 0.272);
+    text-align: center;
+    padding: 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-color: var(--encabezado);
+    border-style: double;
+    border-top-right-radius: 10%;
+}
+
+#info .contenedor {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#info img {
+    width: 250px;
+    height: 180px;
+    border-radius: 20%;
+    border: 3px solid var(--encabezado);
+    margin: 10%;
+    margin-left: 10px;
+}
+
+#info a:hover {
+    background-color: var(--letra); /* Mantener la coherencia */
+}
+
+.pie {
+    font-size: 20px;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    .info-mesa {
+        flex-direction: column;
+    }
+
+  
+    .contenedor {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 8vw; /* Ajusta según tu preferencia */
+    }
+
+    h2 {
+        font-size: 4vw; /* Ajusta según tu preferencia */
+    }
+}
